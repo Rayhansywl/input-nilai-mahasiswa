@@ -14,12 +14,10 @@
   <body class="bg-white">
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm fixed-top"
+      class="navbar navbar-expand-lg navbar-light bg-success shadow-sm fixed-top"
     >
       <div class="container">
-        <a class="navbar-brand fw-bold text-white" href="/"
-          >Portal Akademik</a
-        >
+        <a class="navbar-brand fw-bold text-white" href="/">Portal Akademik</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,13 +30,13 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a
-                class="nav-link active fw-semibold text-white"
+                class="nav-link active fw-semibold text-dark"
                 href="index.html"
                 >Input Nilai</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-semibold text-black" href="data.html"
+              <a class="nav-link active fw-semibold text-white" href="data.html"
                 >Lihat Data Nilai</a
               >
             </li>
@@ -85,14 +83,12 @@
             >
             <select id="matkul" class="form-select" required>
               <option value="">Pilih mata kuliah...</option>
-              <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+              <option value="Rekayasa Perangkat Lunak">
+                Rekayasa Perangkat Lunak
+              </option>
               <option value="Pemrograman Mobile">Pemrograman Mobile</option>
-              <option value="Multimedia">
-                Multimedia
-              </option>
-              <option value="Tecnopreneurship">
-                Tecnopreneurship
-              </option>
+              <option value="Multimedia">Multimedia</option>
+              <option value="Tecnopreneurship">Tecnopreneurship</option>
             </select>
           </div>
           <div class="mb-4">
@@ -107,15 +103,18 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold text-white">
+          <button
+            type="submit"
+            class="btn btn-success w-100 py-2 fw-semibold text-white"
+          >
             Simpan Data
           </button>
         </form>
       </div>
     </div>
     <!-- Footer -->
-    <footer class="mt-auto text-center py-3 bg-white shadow-sm">
-      <p class="mb-0 text-secondary small ">
+    <footer class="mt-auto text-center py-3 bg-success shadow-sm">
+      <p class="mb-0 text-white small">
         Copyright 2025 Portal Akademik - Kelompok 7
       </p>
     </footer>

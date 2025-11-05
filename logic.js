@@ -4,7 +4,7 @@ import {
   addDoc,
   getDocs,
   orderBy,
-  query
+  query,
 } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
 /**
@@ -39,7 +39,7 @@ async function simpanData(event) {
     nama: document.getElementById("nama").value.trim(),
     matkul: document.getElementById("matkul").value.trim(),
     nilai: Number(document.getElementById("nilai").value),
-    waktu: new Date().toISOString() // untuk urutan
+    waktu: new Date().toISOString(), // untuk urutan
   };
 
   try {
@@ -91,7 +91,9 @@ async function loadData() {
     }
   } catch (error) {
     console.error("Gagal memuat data:", error);
-    alert("Tidak bisa memuat data dari database. Cek koneksi dan konfigurasi database!");
+    alert(
+      "Tidak bisa memuat data dari database. Cek koneksi dan konfigurasi database!"
+    );
   }
 }
 
